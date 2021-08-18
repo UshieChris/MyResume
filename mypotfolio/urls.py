@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.views.static import serve
 
 urlpatterns = [
-    path('static/<path:path>/', serve, {'document_root': settings.STATIC_ROOT, }),
+    #path('static/<path:path>/', serve, {'document_root': settings.STATIC_ROOT, }),
     path('admin/', admin.site.urls),
     path('', include('resume.urls')),
 ]
